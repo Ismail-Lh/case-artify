@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import MaxWidthWrapper from '@/components/global/MaxWidthWrapper';
 import HeroDescription from '@/components/hero/HeroDescription';
+import HeroImage from '@/components/hero/HeroImage';
 import HeroList from '@/components/hero/HeroList';
 import HeroTitle from '@/components/hero/HeroTitle';
 import HeroUsersRating from '@/components/hero/HeroUsersRating';
@@ -31,6 +32,8 @@ function HeroSection() {
             <HeroUsersRating />
           </div>
         </div>
+
+        <HeroImage />
       </MaxWidthWrapper>
     </section>
   );
