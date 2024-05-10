@@ -3,15 +3,21 @@ import { Star } from 'lucide-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { v4 as uuidv4 } from 'uuid';
 
-type RatingStarsProps = {
-  numberOfStars?: number;
-};
+import { cn } from '@/lib/utils';
 
-function RatingStars({ numberOfStars = 5 }: RatingStarsProps) {
+interface RatingStarsProps extends React.HTMLAttributes<HTMLDivElement> {
+  numberOfStars?: number;
+  size?: string;
+}
+
+function RatingStars({ numberOfStars = 5, className, size }: RatingStarsProps) {
   return (
-    <div className="flex items-center justify-center gap-0.5">
+    <div className={cn('flex items-center justify-center gap-0.5', className)}>
       {Array.from({ length: numberOfStars }).map(() => (
-        <Star key={uuidv4()} className="size-4 fill-green-600 text-green-600" />
+        <Star
+          key={uuidv4()}
+          className={cn('size-4 fill-green-600 text-green-600', size)}
+        />
       ))}
     </div>
   );
