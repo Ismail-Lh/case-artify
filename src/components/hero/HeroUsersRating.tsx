@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeroStars from './HeroStars';
+import RatingStars from '../global/RatingStars';
 import HeroUsersAvatar from './HeroUsersAvatar';
 
 function HeroUsersRating() {
@@ -9,7 +9,7 @@ function HeroUsersRating() {
       <HeroUsersAvatar />
 
       <div className="flex flex-col items-center justify-between">
-        <HeroStars numberOfStars={10} />
+        <RatingStars />
 
         <p className="font-semibold text-gray-500">
           Rated 5/5 by 1000+ customers
