@@ -32,3 +32,12 @@ export const usersReviewData = [
     userRating: 5,
   },
 ];
+
+export const PHONES = [
+  '/images/testimonials/1.jpg',
+  '/images/testimonials/2.jpg',
+  '/images/testimonials/3.jpg',
+  '/images/testimonials/4.jpg',
+  '/images/testimonials/5.jpg',
+  '/images/testimonials/6.jpg',
+];

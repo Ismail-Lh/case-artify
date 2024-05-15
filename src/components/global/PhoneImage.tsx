@@ -6,12 +6,14 @@ import { cn } from '@/lib/utils';
 interface PhoneImageProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
   dark?: boolean;
+  imgClassName?: string;
 }
 
 function PhoneImage({
   className,
   imgSrc,
   dark = false,
+  imgClassName,
   ...props
 }: PhoneImageProps) {
   return (
@@ -40,7 +42,7 @@ function PhoneImage({
           alt="overlaying phone image"
           width={896}
           height={1831}
-          className="rounded-[2.7rem] object-cover"
+          className={cn('rounded-[2.7rem] object-cover', imgClassName)}
         />
       </div>
     </div>
