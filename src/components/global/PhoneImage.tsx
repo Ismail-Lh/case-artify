@@ -42,7 +42,7 @@ function PhoneImage({
           alt="overlaying phone image"
           width={896}
           height={1831}
-          className={cn('rounded-[2.7rem] object-cover', imgClassName)}
+          className={cn('rounded-[2.7rem] object-cover h-full', imgClassName)}
         />
       </div>
     </div>

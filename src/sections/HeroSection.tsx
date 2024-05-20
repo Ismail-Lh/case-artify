@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import { heroCheckListItems } from '@/utils/constants';
 
+import CheckList from '@/components/global/CheckList';
 import MaxWidthWrapper from '@/components/global/MaxWidthWrapper';
 import HeroDescription from '@/components/hero/HeroDescription';
 import HeroImage from '@/components/hero/HeroImage';
-import HeroList from '@/components/hero/HeroList';
 import HeroTitle from '@/components/hero/HeroTitle';
 import HeroUsersRating from '@/components/hero/HeroUsersRating';
 
@@ -27,7 +28,7 @@ function HeroSection() {
 
             <HeroDescription />
 
-            <HeroList />
+            <CheckList listData={heroCheckListItems} />
 
             <HeroUsersRating />
           </div>

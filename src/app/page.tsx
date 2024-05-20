@@ -1,4 +1,5 @@
 import CasesDesignGallerySection from '@/sections/CasesDesignGallerySection';
+import CustomCaseUploadSection from '@/sections/CustomCaseUploadSection';
 import HeroSection from '@/sections/HeroSection';
 import UsersReviewSection from '@/sections/UsersReviewSection';
 
@@ -10,6 +11,8 @@ export default function Home() {
       <UsersReviewSection />
 
       <CasesDesignGallerySection />
+
+      <CustomCaseUploadSection />
     </main>
   );
 }

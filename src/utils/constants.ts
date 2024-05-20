@@ -1,11 +1,11 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { v4 as uuidv4 } from 'uuid';
 
-export const heroListItems = [
+export const heroCheckListItems = [
   'High-quality, durable material',
   '5 year print guarantee',
   'Modern and stylish design',
-] as const;
+];
 
 export const usersImage = Array.from(
   { length: 5 },

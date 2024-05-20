@@ -1,12 +1,12 @@
 import React from 'react';
 
-import NavLink from '../navbar/NavLink';
+import ButtonLink from './ButtonLink';
 
 function SignInButton() {
   return (
-    <NavLink href="/api/auth/login" size="sm" variant="ghost">
+    <ButtonLink href="/api/auth/login" size="sm" variant="ghost">
       Login
-    </NavLink>
+    </ButtonLink>
   );
 }
 

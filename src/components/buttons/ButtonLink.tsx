@@ -4,7 +4,7 @@ import { VariantProps } from 'class-variance-authority';
 
 import { buttonVariants } from '../ui/button';
 
-interface NavLinkProps
+interface ButtonLinkProps
   extends VariantProps<typeof buttonVariants>,
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
@@ -12,14 +12,14 @@ interface NavLinkProps
   href: string;
 }
 
-function NavLink({
+function ButtonLink({
   children,
   href,
   size,
   variant,
   className,
   ...props
-}: NavLinkProps) {
+}: ButtonLinkProps) {
   return (
     <Link
       href={href}
@@ -35,4 +35,4 @@ function NavLink({
   );
 }
 
-export default NavLink;
+export default ButtonLink;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import NavLink from '../navbar/NavLink';
+import ButtonLink from './ButtonLink';
 
 function SignOutButton() {
   return (
-    <NavLink href="/api/auth/logout" size="sm" variant="ghost">
+    <ButtonLink href="/api/auth/logout" size="sm" variant="ghost">
       Sign out
-    </NavLink>
+    </ButtonLink>
   );
 }
 
